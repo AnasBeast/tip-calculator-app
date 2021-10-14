@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>AnasBeast | Tip calculator app</title>
+
+  
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <section class="container-fluid">
+    <div class="column">
+      <img src="images/logo.svg" alt="logo" class="logo">
+      <main class="grid">
+        <div class="part1">
+          <div class="webflow-input">
+            <h2>Bill </h2> 
+            <input class="bill" id="search" type="number" placeholder="0"></input>
+          </div>
+  
+          <div class="calcul-percentage">
+            <h2>Select Tip %</h2>
+            <div class="gridbox">
+              <button type="submit" value="5%" class="perc btn-active">5%</button>
+              <button type="submit" value="10%" class="perc btn-active">10%</button>
+              <button type="submit" value="15%" class="perc btn-active">15%</button>
+            
+            
+              <button type="submit" value="25%" class="perc btn-active">25%</button>
+              <button type="submit" value="50%" class="perc btn-active">50%</button>
+              <input class="perc" id="custom" type="number" placeholder="CUSTOM"></input>
+            </div>
+          </div>
+  
+          <div class="person-input">
+            <h2>Number of People </h2> 
+            <input class="people" id="search" type="number" placeholder="5"></input>
+          </div>
+        </div>
+        <div class="part2">
+          <div class="flex1">
+            <p>Tip Amount <br>
+              <span style="color: rgba(255, 255, 255, 0.692);">/ person </span>  </p>
+            <div class="text tip">$0.00</div>
+          </div>
+          <div class="flex1">
+            <p>Total <br>
+              <span style="color: rgba(255, 255, 255, 0.692);">/ person</span></p>
+            <div class="text total">$0.00</div>
+          </div>
+          <button class="reset">
+            RESET
+          </button>
+        
+        </div>
+       
+      </main>
+    </div>
+
+    <div class="attribution" style="text-align: center; margin-top: 5%;margin-bottom: 5%;">
+      Challenge by <a href="#" target="_blank">Frontend Mentor</a> <br>
+      Coded by <a href="#">AnasBeast</a>
+    </div>
+  </section>
+
+ 
+  
+  <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
